@@ -799,7 +799,7 @@ class GUI():
     LeftTop = Frame(root)
     LeftMiddle = Frame(root)
     LeftBottom = Frame(root)
-    ChssianLang = Button(root)
+    ChineseLang = Button(root)
     EnglishLang = Button(root)
     InputName = Entry(root)
     Definer = Button(root)
@@ -833,9 +833,9 @@ class GUI():
         self.LeftMiddle.pack()
         self.LeftBottom.pack()
     def InitLangButtons(self):
-        self.ChssianLang = Button(self.LeftTop, command=self.SetLangChs, bg='white', activebackground='gray', font = 'calibri 12', text='简体中文')
+        self.ChineseLang = Button(self.LeftTop, command=self.SetLangChs, bg='white', activebackground='gray', font = 'calibri 12', text='简体中文')
         self.EnglishLang = Button(self.LeftTop, command=self.SetLangEng, bg='white', activebackground='gray', font = 'calibri 12', text='ENGLISH')
-        self.ChssianLang.pack(side='left')
+        self.ChineseLang.pack(side='left')
         self.EnglishLang.pack(side='right')
     def InitLeftSide(self):
         self.InputName = Entry(self.LeftMiddle, width=400, bd=4, fg="black", font='calibri 12', state=NORMAL)
