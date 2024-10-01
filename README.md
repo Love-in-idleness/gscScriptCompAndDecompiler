@@ -76,19 +76,19 @@ Well, let's show you a basic known commands with the arguments:
 
 下面是已知的带有参数的基本命令：
 
-- 3 (0x03): JUMP_UNLESS.
+- 3 (0x03): JUMP_UNLESS.  
 Arguments: [label].   
 (In the original script offset from the beginning of command block)   
-（在脚本中，偏移量是相对于 command 部分的开头的）
-- 5 (0x05): JUMP.
-Arguments: [label].   
+（在脚本中，偏移量是相对于 command 部分的开头的）  
+- 5 (0x05): JUMP.  
+Arguments: [label].    
 (In the original script offset from the beginning of command block)   
-（在脚本中，偏移量是相对于 command 部分的开头的）
-- 12 (0x0C): CALL_SCRIPT.
-Arguments: [script number, ???].   
+（在脚本中，偏移量是相对于 command 部分的开头的）  
+- 12 (0x0C): CALL_SCRIPT.  
+Arguments: [script number, ???].     
 - 13 (0x0D): PAUSE.  
 Arguments: [time in seconds].  
-- 14 (0x0E): CHOICE:
+- 14 (0x0E): CHOICE:  
 Arguments: [variant's number, -1, label1, label2, label3, label4, label5, -1, -1, -1, -1, -1, ???, ???, ???].  
 In the original script is not -1, but choice's strings.  
 在脚本中，有时会以选项的字符串开头，而不是以 -1 开头。  
@@ -130,39 +130,41 @@ Arguments: [???, ???, ???].
 Arguments: [???, ???].  
 
 
-# Syntax / Синтаксис
+# Syntax / 语法解释
 
 For those who desire for scripts to edit it's very important. The syntax is rather simple, but it have some specific moments.
 
 对于想要编辑脚本的人来说，了解这一点非常重要。语法一般比较简单，但也有一些特殊之处。
 
-- "$" 
-In the string's beginning, it is for one-string comment.  
+- "$"   
+In the string's beginning, it is for one-string   comment.  
 在字符串的开头用于单字符串注释。  
-- "#" 
-In the string's beginning, it is for defination of command.
-在字符串开头，用于定义命令。
-- "[..., ..., ...]" 
-It is for function argument's splitted with "," form. It goes strictly on the next line after the command defination.
-用", "形式分割的参数。它严格放在命令定义后的下一行。
-- "@" 
-It is a label, to which some arguments are connecting.
+- "#"   
+In the string's beginning, it is for defination of command.  
+在字符串开头，用于定义命令。  
+- "[..., ..., ...]"   
+It is for function argument's splitted with "," form. It goes strictly on the next line after the command defination.  
+用", "形式分割的参数。它严格放在命令定义后的下一行。  
+- "@"   
+It is a label, to which some arguments are connecting.  
 这是一个标签，用于连接着一些参数。
-- "-1"
-This argument means it connected with next string index.
-该参数表示连接到下一个字符串索引。
+- "-1"  
+This argument means it connected with next string index.  
+该参数表示连接到下一个字符串索引。  
 - ">"
-It is for string beginning.
-After its goes mark of primary index of string or -1. If it's -1, the string is connected. Connected strings always goes after the defination of connected arguments.
-**
-DO NOTE: INDEXES AFTER ">" SHOWS ONLY PRIMARY INDEXES! THEN COMPILE PROGRAM TAKE A STRING INDEX ONLY FROM THE NUMBER OF ">" IN SCRIPT!
-DO NOTE: NOT AN ALL OF CONNECTED INDEXES WAS FOUND!
-**
-（这一段看的不是很懂，大概翻译了一下）
+It is for string beginning. 
+After its goes mark of primary index of string or -1. 
+If it's -1, the string is connected. Connected strings always goes after the defination of connected arguments.  
+**  
+DO NOTE: INDEXES AFTER ">" SHOWS ONLY PRIMARY INDEXES! THEN COMPILE PROGRAM TAKE A STRING INDEX ONLY FROM THE NUMBER OF ">" IN SCRIPT!  
+DO NOTE: NOT AN ALL OF CONNECTED INDEXES WAS FOUND!  
+**  
+（这一段看的不是很懂，大概翻译了一下）  
 用于字符串的开头。
-其后是字符串的起始索引或-1。如果是-1，则连接到下一个字符串。被连接的字符串总是位于连接参数定义之后。
-**
-注意：">"后面的索引只显示起始索引！编译程序时，只从脚本中">"的数量中提取字符串索引！
-注意：没有找到所有的连接的索引！
-**
-
+其后是字符串的起始索引或-1。
+如果是-1，则连接到下一个字符串。被连接的字符串总是位于连接参数定义之后。  
+**  
+注意：">"后面的索引只显示起始索引！编译程序时，只从脚本中">"的数量中提取字符串索引！  
+注意：没有找到所有的连接的索引！  
+**  
+# 游戏汉化指北
