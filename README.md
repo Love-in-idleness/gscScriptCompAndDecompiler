@@ -77,57 +77,57 @@ Well, let's show you a basic known commands with the arguments:
 下面是已知的带有参数的基本命令：
 
 - 3 (0x03): JUMP_UNLESS.
-Arguments: [label]. 
-(In the original script offset from the beginning of command block)
+Arguments: [label].   
+(In the original script offset from the beginning of command block)   
 （在脚本中，偏移量是相对于 command 部分的开头的）
 - 5 (0x05): JUMP.
-Arguments: [label]. 
-(In the original script offset from the beginning of command block)
+Arguments: [label].   
+(In the original script offset from the beginning of command block)   
 （在脚本中，偏移量是相对于 command 部分的开头的）
 - 12 (0x0C): CALL_SCRIPT.
-Arguments: [script number, ???].
-- 13 (0x0D): PAUSE.
-Arguments: [time in seconds].
+Arguments: [script number, ???].   
+- 13 (0x0D): PAUSE.  
+Arguments: [time in seconds].  
 - 14 (0x0E): CHOICE:
-Arguments: [variant's number, -1, label1, label2, label3, label4, label5, -1, -1, -1, -1, -1, ???, ???, ???].
-In the original script is not -1, but choice's strings.
-在脚本中，有时会以选项的字符串开头，而不是以 -1 开头。
-- 20 (0x14): IMAGE_GET.
-Arguments: [image index (from the name), ???].
-- 26 (0x1A): IMAGE_SET.
-Arguments: [].
-- 28 (0x1C): BLEND_IMG.
-Arguments: [???, type1, type2].
-- 30 (0x1E): IMAGE_DEF.
-Arguments: [???, ???, ???, ???, ???, ???].
-- 81 (0x51): MESSAGE.
-Arguments: [???, voice index (from the name), ???, -1, -1, ???].
-In a .gsc itself is not a -1, but a string numbers.
-在gsc中，它本身不是-1，而是一个字符串。
-- 82 (0x52): APPEND_MESSAGE.
-Arguments: [???, ???, ???, ???, -1, ???].
-In a .gsc itself is not a -1, but a string numbers.
-在gsc中，它本身不是-1，而是一个字符串。
-- 83 (0x53): CLEAR_MESSAGE_WINDOW.
-Arguments: [???].
-- 121 (0x79): GET_DIRECTORY.
-Arguments: [???, -1].
-In a .gsc itself is not a -1, but a string numbers.
-在gsc中，它本身不是-1，而是一个字符串。
-- 200 (0xC8): READ_SCENARIO.
-Arguments: [label, ???, ???, ???, ???, ???, ???, ???, ???, ???, ???].
-- 255 (0xFF): SPRITE.
-Arguments: [mode, position, image index, ???, ???].
-- 13568 (0x3500): AND.
-Arguments: [???, ???, ???].
-- 18432 (0x4800): EQUALS.
-Arguments: [???, ???, ???].
-- 21504 (0x5400): GREATER_EQUALS.
-Arguments: [???, ???, ???].
-- 43520 (0xAA00): ADD.
-Arguments: [???, ???, ???].
-- 61696 (0xF100): ASSIGN.
-Arguments: [???, ???].
+Arguments: [variant's number, -1, label1, label2, label3, label4, label5, -1, -1, -1, -1, -1, ???, ???, ???].  
+In the original script is not -1, but choice's strings.  
+在脚本中，有时会以选项的字符串开头，而不是以 -1 开头。  
+- 20 (0x14): IMAGE_GET.  
+Arguments: [image index (from the name), ???].  
+- 26 (0x1A): IMAGE_SET.  
+Arguments: [].  
+- 28 (0x1C): BLEND_IMG.  
+Arguments: [???, type1, type2].  
+- 30 (0x1E): IMAGE_DEF.  
+Arguments: [???, ???, ???, ???, ???, ???].  
+- 81 (0x51): MESSAGE.  
+Arguments: [???, voice index (from the name), ???, -1, -1, ???].  
+In a .gsc itself is not a -1, but a string numbers.  
+在gsc中，它本身不是-1，而是一个字符串。  
+- 82 (0x52): APPEND_MESSAGE.  
+Arguments: [???, ???, ???, ???, -1, ???].  
+In a .gsc itself is not a -1, but a string numbers.  
+在gsc中，它本身不是-1，而是一个字符串。  
+- 83 (0x53): CLEAR_MESSAGE_WINDOW.  
+Arguments: [???].  
+- 121 (0x79): GET_DIRECTORY.  
+Arguments: [???, -1].  
+In a .gsc itself is not a -1, but a string numbers.  
+在gsc中，它本身不是-1，而是一个字符串。  
+- 200 (0xC8): READ_SCENARIO.  
+Arguments: [label, ???, ???, ???, ???, ???, ???, ???, ???, ???, ???].  
+- 255 (0xFF): SPRITE.  
+Arguments: [mode, position, image index, ???, ???].  
+- 13568 (0x3500): AND.  
+Arguments: [???, ???, ???].  
+- 18432 (0x4800): EQUALS.  
+Arguments: [???, ???, ???].  
+- 21504 (0x5400): GREATER_EQUALS.  
+Arguments: [???, ???, ???].  
+- 43520 (0xAA00): ADD.  
+Arguments: [???, ???, ???].  
+- 61696 (0xF100): ASSIGN.  
+Arguments: [???, ???].  
 
 
 # Syntax / Синтаксис
@@ -137,8 +137,8 @@ For those who desire for scripts to edit it's very important. The syntax is rath
 对于想要编辑脚本的人来说，了解这一点非常重要。语法一般比较简单，但也有一些特殊之处。
 
 - "$" 
-In the string's beginning, it is for one-string comment.
-在字符串的开头用于单字符串注释。
+In the string's beginning, it is for one-string comment.  
+在字符串的开头用于单字符串注释。  
 - "#" 
 In the string's beginning, it is for defination of command.
 在字符串开头，用于定义命令。
