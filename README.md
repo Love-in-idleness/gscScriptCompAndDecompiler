@@ -1,4 +1,6 @@
 # gscScriptCompAndDecompiler
+## 下面主要是原来的帮助文档，文末则是利用本程序进行游戏汉化的指南
+
 Tool for decompiling, compiling and rebuilding scripts .gsc from the visual novel's engine codeX RScript (also known as Liar-soft Engine or raiL-soft Engine).
 
 Средство для декомпляции, компиляции и перестройки скриптов .gsc движка визуальных новелл codeX RScript, известного также как Liar-soft Engine или raiL-soft Engine.
@@ -189,4 +191,7 @@ DO NOTE: NOT AN ALL OF CONNECTED INDEXES WAS FOUND!**
 После сего идёт либо показатель изначального индекса строки, либо -1. -1 значит, что строка связанная. Связанные строки всегда следуют после задачи связанных аргументов.
 
 **ВАЖНО: ИНДЕКСЫ ПОСЛЕ ">" ОТОБРАЖАЮТ ЛИШЬ ИЗНАЧАЛЬНЫЕ ИНДЕКСЫ! ПРИ КОМПИЛЯЦИИ ИНДЕКС СТРОКИ БЕРЁТСЯ ЛИШЬ ИЗ НОМЕРА ">" В СКРИПТЕ!
-ВАЖНО: НЕ ВСЕ СВЯЗАННЫЕ ИНДЕКСЫ БЫЛИ НАЙДЕНЫ!**
+ВАЖНО: НЕ ВСЕ СВЯЗАННЫЕ ИНДЕКСЫ БЫЛИ НАЙДЕНЫ!**    
+    
+   
+    
